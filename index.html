@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuis Kotoba Jepang</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="jokoui">
+    <h1>hidup jokowi</h1>
+  </div>
+  <div class="card">
+    <div class="meta">
+      <div>Soal: <span id="progress">0/0</span></div>
+      <div>Skor: <span id="score">0</span></div>
+    </div>
+
+    <div>Terjemahan yang benar untuk kotoba ini:</div>
+    <div class="question" id="question">...</div>
+
+    <div class="choices" id="choices"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="muted" id="hint"></div>
+
+    <div class="row">
+      <button id="btnNext" disabled>Soal berikutnya</button>
+      <button id="btnReset">Ulangi</button>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
